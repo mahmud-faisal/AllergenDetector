@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--    <link rel="stylesheet" href="index.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+    <div class="content">
+        <div id="input-card">
+            <h1>Upload Image To Detech Allergen</h1>
+            <form action="/extract_text" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*">
+                <input type="submit" value="Check">
+            </form>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

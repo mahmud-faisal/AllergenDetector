@@ -1,0 +1,29 @@
+body {
+    background-color: cyan;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    height: 80%; /* Adjusted height to accommodate both input-card and result */
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+}
+
+#input-card {
+    flex: 1; /* Take up half of the available space */
+}
+
+input[name="image"] {
+    width: auto;
+    margin: auto;
+}
+
+#result {
+    flex: 1; /* Take up half of the available space */
+    color: red;
+}
